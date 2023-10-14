@@ -3,7 +3,7 @@ sequenceDiagram
     participant browser
     participant server
 
-    Note left of browser: User is using POST call to send some note to server
+    Note left of browser: User is entering note and clicking save to initiate POST call to server
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
