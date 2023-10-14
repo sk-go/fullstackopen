@@ -9,6 +9,8 @@ sequenceDiagram
     server-->>browser: HTML document
     deactivate server
 
+    browser->>browser: check requirements
+
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
     activate server
     server-->>browser: the JS file
@@ -19,5 +21,4 @@ sequenceDiagram
     server-->>browser: the Notes data
     deactivate server
 
-    Note left of browser: The browser starts executing the JavaScript code that loads the notes within the SPA
 ```
